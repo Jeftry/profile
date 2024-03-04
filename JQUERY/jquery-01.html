@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title> JQUERY-01</title>
+
+    <H1>JQUERY-01</H1>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- <script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+          $("p").hide();
+        });
+        $("#show").click(function(){
+          $("p").show();
+        });
+    });
+</script> -->
+</head>
+<body>
+
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+  <script>
+    $(document).ready(function(){
+      //alert('ok')
+
+      //event element
+      $('#show').click(function(){
+        $('p').show();
+        //$(this).hide();
+      });
+
+      $('#hide').click(function(){
+        $('p').hide();
+        
+      });
+    });
+  </script>
+
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+
+
+</body>
+</html>
