@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="gambar" src="https://ih1.redbubble.net/image.1558205427.3652/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" >
+
+    <p id="demo"></p>
+    <!-- <button id="tombol1"></button>
+    <button name="tombol2"></button> -->
+    
+    <button id="zoomOut" onclick="fzoomout()">Zoom Out</button>
+    <button id="zoomIn" onclick="fzoomin()">Zoom In</button>
+
+    <h2>JavaScript Validation</h2>
+
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="nm_siswa" placeholder="Nama ">
+    <input type="submit" value="Submit">
+    </form>
+
+    <!-- <p id="intro">Finding HTML Elements by Id</p>
+    <p>This example demonstrates the <b>getElementsById</b> method.</p> -->
+
+    <script>
+    //document.getElementById("demo").innerHTML = "Hello World!";
+    //document.getElementById("tombol1").innerHTML = "Hello";
+    //document.getElementsByTagName("tombol2").innerHTML = "World!";
+
+    //const element = document.getElementById("intro");
+    
+    //document.getElementById("demo").innerHTML = 
+    //"The text from the intro paragraph is: " + element.innerHTML;
+
+    //document.getElementById("image").src = "https://ih1.redbubble.net/image.1558205427.3652/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg";
+    //document.getElementById("image").width = "200";
+    //document.getElementById("image").height = "300";
+
+    const image =document.getElementById('gambar')
+
+    //function fzoomin() {
+        //document.getElementById("gambar").src = "https://ih1.redbubble.net/image.1558205427.3652/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg";
+        //document.getElementById("gambar").width = "200";
+        //document.getElementById("gambar").height = "300";
+        
+        //image.width = 200;
+        //image.height =300;
+
+        //alert('fzoomin')
+    //}
+
+    //function fzoomout() {
+        //document.getElementById("gambar").src = "https://ih1.redbubble.net/image.1558205427.3652/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg";
+        //document.getElementById("gambar").width = "100";
+        //document.getElementById("gambar").height = "100";
+
+      //  image.width = 100;
+      //  image.height = 100;
+
+
+        //alert('fzoomout')
+    //}
+
+    function validateForm() {
+        let x = document.forms["myForm"]["nm_siswa"].value;
+        if (x == "") {
+          alert("Name must be filled out");
+          return true;
+        }
+    }
+    </script>
+</body>
+</html>
